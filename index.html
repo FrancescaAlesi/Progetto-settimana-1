@@ -5,11 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Progetto settamana 1</title>
         <link rel="stylesheet" type="text/css" href="assets/CSS/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     </head>
     <body>
 
         <!--Testa della pagina-->
-        <header>
+        <header id="site-header">
             <h1 id="inizio">Francesca Alesi</h1>
             <p><em>Studentessa Full Stack Developer in formazione su Epicode 2026</em></p>
             <nav>
@@ -40,7 +41,7 @@
             <section id="competenze">
                 <h2>Competenze</h2>
                 <p>Le tecnologie su cui mi sento piu sicura al termone di questa prima settimana di corso. Le percentuali sono autovalutazioni, non certificazioni.</p>
-                <p><em>Stack tecnico - autovalutazione</em></p>
+                <p id="paragrafo"><em>Stack tecnico - autovalutazione</em></p>
                 <table>
                     <thead>
                         <tr>
@@ -50,47 +51,78 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>HTML5 semantico</strong>
+                            <td>
+                                <div class="icona">
+                                    <i class="fa-brands fa-html5 custom-icon"></i>
+                                    <strong>HTML5 semantico</strong>
+                                </div>
                                 <p><em>Tag strutturali, attributi, accessibilità di base, from con valutazione.</em></p>
                             </td>
                             <td>
-                                <progress value="85" max="100"></progress>
+                                <div class="barra">
+                                    <div class="barra-fill" style="width: 95%;"></div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>CSS3</strong>
+                            <td>
+                                <div class="icona">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                    <strong>CSS3</strong>
+                                </div>
                                 <p><em>Settori, pseudo-classi, box model, float, pseudo-elementi, Google Fonts.</em></p>
                             </td>
                             <td>
-                                <progress value="75" max="100"></progress>
+                                <div class="barra">
+                                    <div class="barra-fill" style="width: 85%;"></div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Git e GitHub</strong>
+                            <td>
+                                <div class="icona">
+                                    <i class="fa-brands fa-git-alt"></i>
+                                    <strong>Git e GitHub</strong>
+                                </div>
                                 <p><em>init, add, commit, push, repository remoti, pubblicazione su GitHub Pages.</em></p>
                             </td>
                             <td>
-                                <progress value="60" max="100"></progress>
+                                <div class="barra">
+                                    <div class="barra-fill" style="width: 75%;"></div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Linea di comando</strong>
+                            <td>
+                                <div class="icona">
+                                    <i class="fa-solid fa-terminal"></i>
+                                    <strong>Linea di comando</strong>
+                                </div>
                                 <p><em>Navigazione tra le cartelle, gestione file, comandi base si shell su macOS e Linux.</em></p>
                             </td>
                             <td>
-                                <progress value="50" max="100"></progress>
+                                <div class="barra">
+                                    <div class="barra-fill" style="width: 65%;"></div>
+                                </div>
                             </td>
                         </tr>
                         <tr>
-                            <td><strong>Markdown e documentazione</strong>
+                            <td>
+                                <div class="tech-title">
+                                    <i class="fa-brands fa-markdown"></i>
+                                    <strong>Markdown e documentazione</strong>
+                                </div>
                                 <p><em>README, documentazione tecnica, scrittura chiara per altri sviluppatori.</em></p>
                             </td>
                             <td>
-                                <progress value="80" max="100"></progress>
+                                <div class="barra">
+                                    <div class="barra-fill" style="width: 60%;"></div>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <br/>
                 <a href="#">
                     <button type="submit">Torna Su</button>
                 </a>
@@ -101,7 +133,7 @@
                 <h2>Esperienze</h2>
                 <p>Un riepilogo del mio percorso formativo e lavorativo.</p>
                 <table>
-                    <p><em>Esperienze formative e lavorative</em></p>
+                    <p id="paragrafo"><em>Esperienze formative e lavorative</em></p>
                     <thead>
                         <tr>
                             <th scope="col">Anno</th>
@@ -132,6 +164,7 @@
                         </tr>
                     </tbody>
                 </table>
+                <br/>
                 <a href="#">
                     <button type="submit">Torna Su</button>
                 </a>
@@ -172,9 +205,11 @@
                     <a href="https://github.com/FrancescaAlesi/Week-1" target="_blank">Vedi su GitHub</a>
                     <br/><br/>
                 </article>
+                <br/>
                 <a href="#">
                     <button type="submit">Torna Su</button>
                 </a>
+                <br/>
                 <a href="Progetti.html" target="_blank">Tutti i progetti in dettaglio</a>
             </section>
 

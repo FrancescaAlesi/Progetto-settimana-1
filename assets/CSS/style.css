@@ -1,0 +1,290 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+/* tipografia di base */
+body {
+	font-family: 'Inter', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.7;
+	color: #2b2b2b;
+	background-color: #f4f1ec;
+}
+
+/* Header */
+#site-header {
+	background-color: hsl(45, 90%, 60%);
+	background-image: url('../IMG/header-bg.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #f0e7c8;
+	text-align: center;
+	line-height: 2.4;
+	padding: 60px 20px 40px;
+	border-bottom: 4px solid hsl(45, 90%, 60%);
+}
+
+#inizio{
+    color:#ffffff;
+}
+
+#site-header h1 {
+	font-size: 3rem;
+	font-weight: bold;
+	font-style: italic;
+	text-shadow:  0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.tagline {
+	color: rgb(244, 74, 74);
+	font-style: italic;
+}
+
+/* Nav */
+#site-header nav ul {
+	padding: 0;
+	margin: 0;
+}
+
+#site-header nav li {
+	display: inline-block;
+}
+
+#site-header nav a {
+	color: hsl(67, 98%, 26%);
+	font-weight: bold;
+	display: inline-block;
+	padding: 8px 16px;
+	margin: 0 4px;
+	border-radius: 4px;
+	line-height: 1.6;
+}
+
+#site-header nav a:hover {
+	color: #ffffff;
+	background-color: hsl(45, 90%, 60%);
+}
+
+/* Main centrato */
+main {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+/* Sezioni */
+main section {
+	background-color: #ffffff;
+	padding: 32px;
+	margin-bottom: 24px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* Titoli del main con marker */
+h2 {
+	font-size: 1.8rem;
+	color: hsl(220, 60%, 25%);
+	text-align: left;
+	line-height: 1.6;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+main section h2::before {
+	content: '\2756';
+	color: hsl(45, 90%, 50%);
+}
+
+h3 {
+	font-size: 1.2rem;
+	color: hsl(220, 30%, 25%);
+	text-align: left;
+	line-height: 2.2;
+    font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Sezione "Chi sono" */
+.avatar {
+	width: 110px;
+	height: 110px;
+	border: 5px solid hsl(45, 90%, 60%);
+	border-radius: 50%;
+	float: left;
+	margin: 0 24px 12px 0;
+}
+
+#chi-sono {
+	text-align: justify;
+}
+
+#chi-sono p:first-of-type {
+	font-size: 1.15rem;
+	font-style: italic;
+	color: hsl(220, 60%, 30%);
+}
+
+#chi-sono p:first-of-type::first-letter {
+	font-size: 3rem;
+	font-weight: bold;
+	float: left;
+	margin-right: 6px;
+	color: hsl(220, 60%, 30%);
+}
+
+/* Sezione successiva */
+#competenze {
+	clear: both;
+}
+
+/* Lista competenze a righe alternate */
+.skill-list {
+	line-height: 4;
+}
+
+.skill-list li:nth-child(odd) {
+	background-color: #f5f7fb;
+}
+
+.skill-list li:nth-child(even) {
+	background-color: #ffffff;
+}
+
+.skill-list li:first-child {
+	font-weight: bold;
+}
+
+/*tabella competenze*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #ece6d8;
+  color:  hsl(220, 60%, 25%);           
+  text-align: left;
+  padding: 12px 16px;
+  font-weight: 600;
+}
+
+tbody td {
+  padding: 16px;
+  border-bottom: 1px solid #ece6d8; 
+  vertical-align: middle;
+}
+
+tbody td p {
+  margin: 4px 0 0 0;
+  color: hsl(220, 30%, 40%);
+  font-size: 0.9em;
+}
+
+#paragrafo{
+    color:hsl(220, 30%, 40%); 
+}
+
+/* barre di livello */
+.barra {
+  width: 399px;
+  height: 10px;
+  background-color: #ede8dc;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barra-fill {
+  height: 100%;
+  background-color: #f1ad02;
+  border-radius: 999px;
+}
+
+/* Progetti alternati*/
+.project:nth-of-type(odd) {
+	background-color: hsl(45, 60%, 96%);
+}
+
+.project:nth-of-type(even) {
+	background-color: #ffffff;
+}
+
+.project:first-of-type h3::after {
+	content: 'NEW';
+	display: inline-block;
+	padding: 2px 8px;
+	margin-left: 12px;
+	background-color: hsl(0, 70%, 50%);
+	color: #ffffff;
+	border-radius: 3px;
+	font-size: 0.75rem;
+}
+
+/* Form contatti */
+label {
+	font-weight: bold;
+	color: 1px solid #d6cfbf;
+}
+
+input,
+textarea {
+	font-family: 'Helvetica Neue', Arial, sans-serif;
+	font-size: 1rem;
+	width: 60%;
+	background-color: #fbf8f1
+;
+}
+
+input:focus,
+textarea:focus {
+	background-color: #ffffff;
+	color: hsl(220, 30%, 25%);
+}
+
+#consenso {
+	width: auto;
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #a39b87;
+	font-style: italic;
+}
+
+#competenze h2 span {
+	color: white;
+	font-size: 40px;
+	background-color: red;
+}
+
+button {
+	color: #ffffff;
+	background-color: hsl(220, 60%, 30%);
+	font-weight: bold;
+	width: 30%;
+	padding: 12px 24px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+	color: hsl(0, 0%, 100%);
+	background-color: hsl(220, 60%, 45%);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+#site-footer {
+	background-color: hsl(220, 40%, 15%);
+	color: #ffffff;
+	text-align: center;
+	font-size: 0.9rem;
+	line-height: 2.4;
+	padding: 30px 20px;
+}
